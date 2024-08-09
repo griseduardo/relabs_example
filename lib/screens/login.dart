@@ -3,11 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:relabs_example/widgets/login/sign_up_link.dart';
 import 'package:relabs_example/widgets/login/form_divider.dart';
 import 'package:relabs_example/widgets/login/social_media_icons.dart';
-import 'package:relabs_example/widgets/login/button.dart';
-import 'package:relabs_example/widgets/login/options.dart';
-import 'package:relabs_example/widgets/login/form_text_field.dart';
 import 'package:relabs_example/widgets/login/form_title.dart';
 import 'package:relabs_example/widgets/login/header_icons.dart';
+import 'package:relabs_example/widgets/login/login_form.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -34,13 +32,7 @@ class Login extends StatelessWidget {
                       Expanded(child: HeaderIcons()),
                       FormTitle(),
                       SizedBox(height: 30),
-                      FormTextField(placeholder: 'Email'),
-                      SizedBox(height: 30),
-                      FormTextField(placeholder: 'Password'),
-                      SizedBox(height: 30),
-                      Options(),
-                      SizedBox(height: 30),
-                      Button(),
+                      LoginForm(),
                       SizedBox(height: 30),
                       FormDivider(),
                       SizedBox(height: 30),
